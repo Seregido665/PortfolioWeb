@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSSs/index.css">
+    <link rel="stylesheet" href="CSSs/experience.css">
+    <link rel="stylesheet" href="CSSs/project.css">
+    <link rel="stylesheet" href="CSSs/aboutMe.css">
+    <link rel="stylesheet" href="CSSs/skills.css">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="nav-brand">
             <div class="nav-avatar"><img src="img/imgPerfil.jpg" alt="Sergio Luque Testera"></div>
@@ -32,13 +35,21 @@
     <header class="hero" id="inicio">
         <h1 class="hero-role">Software Developer FullStack</h1>
         <h1 class="hero-name">Sergio Luque Testera</h1>
-        <p class="hero-subtitle">Muy motivado y con ganas de trabajar y aportar.</p>
-        <a href="CV_Sergio_Luque.pdf" download class="btn-cv">&#128196; Descargar CV</a>
+        <p class="hero-subtitle">Motivado y con ganas de trabajar.</p>
+        <div class="hero-social">
+            <a href="https://www.linkedin.com/in/sergio-luque-testera/" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Seregido665" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                <img class="skill-icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+            </a>
+        </div>
+        <a href="CV_Sergio_Luque.pdf" download target="_blank" rel="noopener noreferrer" class="btn-cv">&#128196; Descargar CV</a>
     </header>
 
     <!-- EXPERIENCIA -->
-    <section class="experience" id="sobre-mi">
-        <h2 class="section-title">Experiencia</h2>
+    <section class="experience" id="experiencia">
+        <h2 class="section-title">EXPERIENCIA</h2>
         <div class="timeline">
 
             <div class="timeline-item">
@@ -50,39 +61,22 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2020 – 2024</div>
-                <div class="timeline-content">
-                    <h3 class="tl-role">Dependiente y reponedor &nbsp;·&nbsp; Cajero &nbsp;·&nbsp; Mozo de almacén</h3>
-                    <span class="tl-company">Petiberia</span>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021 – 2022</div>
-                <div class="timeline-content">
-                    <h3 class="tl-role">Tatuador y piercer</h3>
-                    <span class="tl-company">Ultratinta</span>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2017 – 2018</div>
-                <div class="timeline-content">
-                    <h3 class="tl-role">Programador y Concept Artist</h3>
-                    <span class="tl-company">Desarrollo juego <em>Element Core</em></span>
-                </div>
-            </div>
 
         </div>
+        <ul class="exp-list">
+            <li>Desarrollo de aplicaciones web <strong>fullstack</strong></li>
+            <li>Creación y consumo de <strong>APIs REST</strong></li>
+            <li>Creación y gestión de <strong>bases de datos</strong></li>
+            <li><strong>Autenticación</strong> y autorización de usuarios</li>
+            <li>Implementación de operaciones <strong>CRUD</strong></li>
+            <li><strong>Depuración</strong> de código</li>
+            <li>Validación de <strong>formularios</strong></li>
+        </ul>
     </section>
 
     <!-- PROYECTOS -->
     <section class="projects" id="proyectos">
-        <h2 class="section-title">Mis proyectos</h2>
+        <h2 class="section-title">PROYECTOS</h2>
         <div class="projects-grid">
 
             <div class="project-card" id="chess-project">
@@ -151,9 +145,197 @@
         </div>
     </section>
 
+    <!-- SOBRE MI -->
+    <section class="about" id="sobre-mi">
+        <h2 class="section-title">SOBRE MÍ</h2>
+        <div class="about-wrapper">
+
+            <div class="about-main">
+                <div class="about-header">
+                    <img class="about-photo" src="img/imgPerfil.jpg" alt="Sergio Luque Testera">
+                    <div class="about-headline">
+                        <h3 class="about-name">Sergio Luque Testera</h3>
+                    </div>
+                </div>
+                <div class="about-body">
+                    <p>
+                        Llegué al desarrollo de software dando muchas vueltas. Siempre me ha gustado dibujar
+                        y quise dedicarme a ello, pero la vida del artista es complicada, demasiado para mí.
+                        Por eso recurrí a la programación: una de las profesiones del futuro que, pese a mis muchas dudas,
+                        acabó gustándome. Y más cuando pude crear ChessTeacher, una app útil
+                        para los aficionados al ajedrez como yo.<br>
+                    </p>
+                    <p>
+                        "Esto mola" pensé.
+                    </p>
+                    <p>
+                        Soy un programador junior FullStack con formación en tecnologías modernas y especial
+                        interés en el frontend, aunque me siento cómodo en ambos. Proactivo, resolutivo, y con ganas de aportar
+                        y trabajar en equipo.
+                    </p>
+                    <p class="about-pd">
+                        PD: Quisiera ser mejor, pero 1450 de ELO no está mal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-cards-row">
+                <div class="about-social-row">
+                    <a href="https://www.linkedin.com/in/sergio-luque-testera/" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Seregido665" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                        <img class="skill-icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills-grid">
+
+            <!-- Lenguajes -->
+            <div class="skill-card">
+                <h3 class="skill-card-title skill-cyan">Lenguajes</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="img/SQLicon.png" alt="SQL">
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML">
+                        <span>HTML / PUG</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="CSS/SASS">
+                        <span>CSS / SASS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entornos -->
+            <div class="skill-card">
+                <h3 class="skill-card-title skill-cyan">Entornos</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio">
+                        <span>Visual Studio</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" alt="Android Studio">
+                        <span>Android Studio</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt="Photoshop">
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
+                        <span>Illustrator</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="skill-card">
+                <h3 class="skill-card-title skill-orange">Frameworks</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon skill-icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js">
+                        <span>Express.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="img/AEMicon.png" alt="AEM">
+                        <span>AEM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otros -->
+            <div class="skill-card">
+                <h3 class="skill-card-title skill-orange">Otros</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img class="skill-icon skill-icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                        <span>GitHub / Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                        <span>SQLite</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman">
+                        <span>Postman</span>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" alt="Gulp">
+                        <span>Gulp</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <footer class="footer-portfolio">
-        <p>Correo: sergiotestera666@gmail.com</p>
-        <p>Teléfono: 669 607 846</p>
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <span class="footer-label">Contacto</span>
+                <a href="mailto:sergiotestera666@gmail.com" class="footer-link">sergiotestera666@gmail.com</a>
+                <a href="tel:+34669607846" class="footer-link">669 607 846</a>
+            </div>
+            <div class="footer-brand">
+                <span class="footer-name">Sergio Luque Testera</span>
+                <span class="footer-copy">&copy; 2026</span>
+            </div>
+            <div class="footer-social">
+                <span class="footer-label">Redes</span>
+                <div class="footer-social-icons">
+                    <a href="https://www.linkedin.com/in/sergio-luque-testera/" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Seregido665" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                        <img class="skill-icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

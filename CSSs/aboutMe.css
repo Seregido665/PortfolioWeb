@@ -1,0 +1,163 @@
+/* ===== SOBRE MI ===== */
+.about {
+    background-color: #1c1c1c;
+    padding: 70px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 860px;
+    width: 100%;
+}
+
+.about-main {
+    background-color: #272727;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 30px 32px;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.about-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(212, 245, 60, 0.5);
+    flex-shrink: 0;
+}
+
+.about-headline {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+}
+
+.about-role {
+    font-size: 0.85rem;
+    color: #d4f53c;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.about-body p {
+    font-size: 0.97rem;
+    color: #bbbbbb;
+    line-height: 1.85;
+}
+
+.about-body strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.about-pd {
+    font-size: 0.85rem !important;
+    color: #666666 !important;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.about-cards-row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.about-social-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 14px 0;
+}
+
+.about-contact {
+    background-color: #272727;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 26px 24px;
+}
+
+.contact-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #d4f53c;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    opacity: 0.75;
+}
+
+.contact-item span:last-child {
+    font-size: 0.87rem;
+    color: #cccccc;
+    word-break: break-all;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    width: 100%;
+}
+
+.social-link:hover {
+    color: #d4f53c;
+}
+
+.social-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+}

@@ -1,0 +1,117 @@
+/* ===== EXPERIENCIA ===== */
+.experience {
+    background-color: #1c1c1c;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 860px;
+    width: 100%;
+    padding: 28px 52px;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 40px 28px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #d4f53c;
+    border: 3px solid #1c1c1c;
+    box-shadow: 0 0 0 1px #d4f53c;
+}
+
+.timeline-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #d4f53c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.tl-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.tl-company {
+    font-size: 0.95rem;
+    color: #888888;
+    font-style: normal;
+}
+
+.tl-company em {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+.exp-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 32px;
+    max-width: 860px;
+    width: 100%;
+    margin-top: 28px;
+    padding: 24px 32px;
+    background-color: #272727;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+}
+
+.exp-list li {
+    font-size: 0.93rem;
+    color: #bbbbbb;
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.exp-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #d4f53c;
+    font-weight: 700;
+}
+
+.exp-list li strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(212, 245, 60, 0.12);
+    color: #d4f53c;
+    border: 1px solid rgba(212, 245, 60, 0.35);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    margin-left: 8px;
+    text-transform: uppercase;
+}

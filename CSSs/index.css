@@ -1,0 +1,331 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 60px;
+    background-color: #1c1c1c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid rgba(212, 245, 60, 0.5);
+}
+
+.nav-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nav-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.nav-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.nav-role {
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 38px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4f53c;
+}
+
+/* ===== DROPDOWN ===== */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a::after {
+    content: '';
+    display: inline-block;
+    margin-left: 6px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.25s ease;
+    vertical-align: middle;
+}
+
+.nav-dropdown:hover > a::after {
+    transform: translateY(2px) rotate(-135deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    background-color: #272727;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 6px 0;
+    list-style: none;
+    min-width: 210px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    z-index: 200;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #cccccc;
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    color: #d4f53c;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-color: #1c1c1c;
+    min-height: 62vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    gap: 6px;
+}
+
+.hero-role {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 500;
+    color: #d4f53c;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+}
+
+.hero-name {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #888888;
+    margin-top: 14px;
+    letter-spacing: 0.3px;
+}
+
+.hero-social {
+    display: flex;
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.hero-social .social-icon-link img {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #444444;
+    color: #cccccc;
+    text-decoration: none;
+    padding: 9px 24px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 28px;
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    border-color: #d4f53c;
+    color: #d4f53c;
+}
+
+/* ===== COMPARTIDO ===== */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 3px;
+    background-color: #d4f53c;
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+
+.social-icon-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.social-icon-link:hover img {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
+
+/* ===== FOOTER ===== */
+.footer-portfolio {
+    background-color: #141414;
+    border-top: 1px solid rgba(212, 245, 60, 0.18);
+    padding: 48px 20px 32px;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    gap: 32px;
+}
+
+.footer-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #d4f53c;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-link {
+    font-size: 0.875rem;
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #d4f53c;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.2px;
+}
+
+.footer-copy {
+    font-size: 0.75rem;
+    color: #444444;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-social .social-icon-link img {
+    width: 26px;
+    height: 26px;
+}
