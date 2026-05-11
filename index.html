@@ -7,28 +7,148 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <div class="header-portfolio">
-    <h2>Sergio Luque Testera</h2>
-    <p>Portfolio en desarrollo de software FullStack</p>
-</div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="nav-avatar"><img src="img/imgPerfil.jpg" alt="Sergio Luque Testera"></div>
+            <div class="nav-brand-text">
+                <span class="nav-role">Welcome!</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li class="nav-dropdown">
+                <a href="#proyectos">Proyectos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#chess-project">ChessTeacher</a></li>
+                    <li><a href="#poke-project">PokeApi Interactiva</a></li>
+                </ul>
+            </li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <h1 class="hero-role">Software Developer FullStack</h1>
+        <h1 class="hero-name">Sergio Luque Testera</h1>
+        <p class="hero-subtitle">Muy motivado y con ganas de trabajar y aportar.</p>
+        <a href="CV_Sergio_Luque.pdf" download class="btn-cv">&#128196; Descargar CV</a>
+    </header>
+
+    <!-- EXPERIENCIA -->
+    <section class="experience" id="sobre-mi">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Marzo – Mayo 2026</div>
+                <div class="timeline-content">
+                    <h3 class="tl-role">Programador Front-end <span class="badge">Prácticas</span></h3>
+                    <span class="tl-company">SeidorCX</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020 – 2024</div>
+                <div class="timeline-content">
+                    <h3 class="tl-role">Dependiente y reponedor &nbsp;·&nbsp; Cajero &nbsp;·&nbsp; Mozo de almacén</h3>
+                    <span class="tl-company">Petiberia</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 – 2022</div>
+                <div class="timeline-content">
+                    <h3 class="tl-role">Tatuador y piercer</h3>
+                    <span class="tl-company">Ultratinta</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017 – 2018</div>
+                <div class="timeline-content">
+                    <h3 class="tl-role">Programador y Concept Artist</h3>
+                    <span class="tl-company">Desarrollo juego <em>Element Core</em></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- PROYECTOS -->
-    <section class="projects" style="margin-bottom: 40px; padding-bottom: 80px;">
-        <div class="chessProject">
-            <h2>ChessTeacher-Project TFG</h2>
-            <h3 class="descripcion">Con esta aplicación podrás jugar partidas de ajedrez contra el motor Stockfish<br>
-                y analizarlas posteriormente sin límite,
-                facilitando la evaluación de estrategias
-                y la mejora<br> del rendimiento del jugador.</h3>
-            <a href="chessProyect.html"><button>Mas información.</button></a>
+    <section class="projects" id="proyectos">
+        <h2 class="section-title">Mis proyectos</h2>
+        <div class="projects-grid">
+
+            <div class="project-card" id="chess-project">
+                <div class="project-img" style="background-image: url('img/ChessFondo.jpg');"></div>
+                <div class="project-body">
+                    <span class="project-label">TFG</span>
+                    <h3 class="project-name">ChessTeacher</h3>
+                    <p class="project-desc">
+                        Aplicación web para aprender y practicar ajedrez contra el motor <strong>Stockfish</strong>.
+                        Permite modificar dificultad, temporizador, guardar partidas en la nube vinculadas al usuario y revisarlas en un modo de análisis
+                        con evaluación en tiempo real. Tambien permite importar y exportar partidas en formato <strong>PGN</strong>.<br>
+                        Incluye autenticación con <strong>JWT</strong> y cifrado <strong>bcrypt</strong>, historial de partidas con clasificación
+                        de jugadas por calidad, y una barra de ventaja entre otras cosas.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                    </div>
+                    <div class="card-screenshots">
+                        <div class="screenshot-wrap"><img src="img/ct1.jpg" alt="Captura 1"></div>
+                        <div class="screenshot-wrap"><img src="img/ct2.jpg" alt="Captura 2"></div>
+                        <div class="screenshot-wrap"><img src="img/ct3.jpg" alt="Captura 3"></div>
+                        <div class="screenshot-wrap"><img src="img/ct4.jpg" alt="Captura 4"></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://chessteacher.vercel.app/" target="_blank" class="project-btn">Probar app &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" id="poke-project">
+                <div class="project-img" style="background-image: url('img/PokFondo.jpg');"></div>
+                <div class="project-body">
+                    <span class="project-label">API REST</span>
+                    <h3 class="project-name">PokeApi Interactiva</h3>
+                    <p class="project-desc">
+                        Aplicación web para consultar datos de la <strong>PokéAPI</strong>. Presenta un listado completo
+                        de Pokémon con vista detallada de cada uno, búsquedas avanzadas y filtrado de datos.<br>
+                        Incluye formulario para crear usuarios con <strong>operaciones CRUD básicas</strong> en el frontend,
+                        aplicando consumo de APIs REST, manejo de estados, renderizado de componentes y gestión de formularios.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="card-screenshots">
+                        <div class="screenshot-wrap"><img src="img/Pok1.jpg" alt="Captura 1"></div>
+                        <div class="screenshot-wrap"><img src="img/Pok6.jpg" alt="Captura 2"></div>
+                        <div class="screenshot-wrap"><img src="img/Pok5.jpg" alt="Captura 3"></div>
+                        <div class="screenshot-wrap"><img src="img/Pok4.jpg" alt="Captura 4"></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://api-formulario-eight.vercel.app/main" target="_blank" class="project-btn">Probar app &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="projectPoke">
-            <h2>PokeApi Explorer</h2>
-            <h3 class="descripcion">Permite hacer consultas a la PokéAPI para mostrar información detallada<br> de cada Pokémon,
-incluyendo búsquedas avanzadas<br> y filtrado de datos.</h3>
-            <a href="proyecto1.html"><button>Mas información.</button></a>
-        </div>
-        
     </section>
 
     <footer class="footer-portfolio">
