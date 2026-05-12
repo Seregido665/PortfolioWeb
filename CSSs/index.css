@@ -20,12 +20,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 60px;
-    background-color: #1c1c1c;
+    background-color: #0c0c0caf;
     position: sticky;
     top: 0;
     z-index: 1000;
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    height: 70px;
 }
 
 .nav-brand {
@@ -35,8 +36,8 @@ body {
 }
 
 .nav-avatar {
-    width: 42px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -63,8 +64,9 @@ body {
 }
 
 .nav-role {
-    font-size: 0.75rem;
-    color: #888888;
+    font-size: 1.2rem;
+    color: #d4f53c;
+    letter-spacing: 3px;
 }
 
 .nav-links {
@@ -75,8 +77,8 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #cccccc;
-    font-size: 0.95rem;
+    color: #fcfcfc;
+    font-size: 1.1rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -160,15 +162,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 160px 20px;
     gap: 6px;
 }
 
 .hero-role {
     font-size: clamp(2.8rem, 6vw, 5rem);
-    font-weight: 500;
+    font-weight: 400;
     color: #d4f53c;
-    letter-spacing: -1.5px;
+    letter-spacing: 4.5px;
     line-height: 1.1;
 }
 
@@ -190,7 +192,7 @@ body {
 .hero-social {
     display: flex;
     gap: 18px;
-    margin-top: 16px;
+    margin-top: 28px;
 }
 
 .hero-social .social-icon-link img {

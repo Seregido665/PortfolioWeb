@@ -57,16 +57,16 @@
 }
 
 .project-name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 10px;
-    letter-spacing: -0.3px;
+    letter-spacing: 0.5px;
 }
 
 .project-desc {
     font-size: 0.95rem;
-    color: #999999;
+    color: #c4c4c4;
     line-height: 1.65;
     margin-bottom: 18px;
 }
@@ -75,17 +75,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 22px;
+    margin-bottom: 8px;
+    justify-content: center;
 }
 
 .project-tech span {
     font-size: 0.75rem;
     font-weight: 600;
-    color: #cccccc;
+    color: #ffffff;
     background-color: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 3px 12px;
     border-radius: 20px;
+    letter-spacing: 1px;
 }
 
 .card-screenshots {
@@ -119,7 +121,7 @@
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-    margin-top: 6px;
+    margin-top: 32px;
 }
 
 .project-btn {
