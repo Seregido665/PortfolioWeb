@@ -32,8 +32,8 @@
 }
 
 .about-photo {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid rgba(212, 245, 60, 0.5);
