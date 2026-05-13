@@ -55,7 +55,7 @@
 
 .skill-icon-light {
     filter: brightness(0) invert(1);
-    opacity: 0.85;
+    opacity: 1;
 }
 
 .skill-placeholder {
@@ -63,19 +63,19 @@
     height: 38px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.55rem;
     font-weight: 700;
-    color: #888888;
+    color: #aaaaaa;
     letter-spacing: 0.4px;
 }
 
 .skill-item span {
     font-size: 0.72rem;
-    color: #aaaaaa;
+    color: #c8c8c8;
     font-weight: 500;
     line-height: 1.3;
 }

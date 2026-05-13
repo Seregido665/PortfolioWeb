@@ -12,7 +12,7 @@
     max-width: 860px;
     width: 100%;
     padding: 28px 52px;
-    border-left: 2px solid rgba(255, 255, 255, 0.08);
+    border-left: 2px solid rgba(255, 255, 255, 0.22);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
@@ -57,12 +57,12 @@
 
 .tl-company {
     font-size: 0.95rem;
-    color: #888888;
+    color: #aaaaaa;
     font-style: normal;
 }
 
 .tl-company em {
-    color: #aaaaaa;
+    color: #c0c0c0;
     font-style: italic;
 }
 
@@ -82,7 +82,7 @@
 
 .exp-list li {
     font-size: 0.93rem;
-    color: #bbbbbb;
+    color: #d0d0d0;
     padding-left: 14px;
     position: relative;
     line-height: 1.5;

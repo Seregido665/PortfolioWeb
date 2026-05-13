@@ -66,7 +66,7 @@
 
 .project-desc {
     font-size: 0.95rem;
-    color: #c4c4c4;
+    color: #d8d8d8;
     line-height: 1.65;
     margin-bottom: 18px;
 }
@@ -82,8 +82,8 @@
     font-size: 0.75rem;
     font-weight: 600;
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 3px 12px;
     border-radius: 20px;
     letter-spacing: 1px;
@@ -100,7 +100,7 @@
 .screenshot-wrap {
     overflow: hidden;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .screenshot-wrap img {
@@ -152,8 +152,8 @@
 
 .project-btn-outline {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #cccccc;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #e0e0e0;
 }
 
 .project-btn-outline:hover {
@@ -164,7 +164,7 @@
 
 .project-btn-github {
     background: #0d0f13;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.38);
     color: #ffffff;
     box-shadow: none;
     width: 100px;
@@ -173,7 +173,7 @@
 
 .project-btn-githubCT {
     background: #0d0f13;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.38);
     color: #ffffff;
     box-shadow: none;
     width: 150px;
