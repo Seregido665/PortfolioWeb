@@ -222,8 +222,9 @@ body {
 }
 
 /* ===== COMPARTIDO ===== */
-.experience {
-    scroll-margin-top: 50px;
+.experience,
+.project-card {
+    scroll-margin-top: 70px;
 }
 
 .section-title {
@@ -335,8 +336,13 @@ body {
 
     /* Navbar */
     .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         padding: 16px 20px;
         justify-content: center;
+        will-change: opacity;
     }
 
     .nav-toggle {
@@ -349,7 +355,7 @@ body {
 
     /* Hero */
     .hero {
-        padding: 60px 20px;
+        padding: 130px 20px 60px;
         min-height: unset;
     }
 
