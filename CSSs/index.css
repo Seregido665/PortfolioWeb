@@ -184,8 +184,8 @@ body {
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: #b0b0b0;
-    margin-top: 14px;
+    color: #d1d1d1;
+    margin-top: 24px;
     letter-spacing: 0.3px;
 }
 
@@ -351,6 +351,11 @@ body {
 
     .nav-links {
         display: none;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-top: 14px;
     }
 
     /* Hero */
