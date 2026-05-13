@@ -212,7 +212,8 @@ body {
     font-size: 0.9rem;
     margin-top: 28px;
     transition: all 0.3s ease;
-    width: 120px;
+    width: 200px;
+    justify-content: center;
 }
 
 .btn-cv:hover {
