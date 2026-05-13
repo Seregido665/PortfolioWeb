@@ -101,6 +101,18 @@
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    .timeline {
+        padding: 24px 24px 24px 36px;
+    }
+
+    .exp-list {
+        grid-template-columns: 1fr;
+        padding: 20px 20px;
+        gap: 8px;
+    }
+}
+
 .badge {
     display: inline-block;
     background-color: rgba(212, 245, 60, 0.12);
