@@ -95,4 +95,8 @@
     .skills-grid {
         grid-template-columns: 1fr;
     }
+    .skill-card-solo {
+        max-width: calc(100% - 10px);
+        width: 100%;
+    }
 }
