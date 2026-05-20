@@ -200,6 +200,37 @@ body {
     height: 34px;
 }
 
+.hero-contact {
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.hero-contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease;
+}
+
+.hero-contact-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #d4f53c;
+}
+
+.item2 {
+    margin-left: 20px;
+}
+
+.hero-contact-item:hover {
+    color: #d4f53c;
+}
+
 .btn-cv {
     display: inline-flex;
     align-items: center;
