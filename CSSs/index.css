@@ -346,6 +346,7 @@ body {
         right: 0;
         padding: 16px 20px;
         justify-content: space-between;
+        height: 50px;
     }
 
     .nav-toggle {
