@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 navLinks.classList.remove('open');
             });
         });
+
+        document.addEventListener('click', e => {
+            if (navLinks.classList.contains('open') &&
+                !navLinks.contains(e.target) &&
+                !navToggle.contains(e.target)) {
+                navToggle.classList.remove('open');
+                navLinks.classList.remove('open');
+            }
+        });
     }
 
     const modal = document.getElementById('img-modal');
