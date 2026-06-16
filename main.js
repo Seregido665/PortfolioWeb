@@ -26,6 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    document.querySelectorAll('.card-screenshots').forEach(section => {
+        const toggle = section.querySelector('.screenshots-toggle');
+        const hide = section.querySelector('.screenshots-hide');
+
+        toggle.addEventListener('click', () => {
+            section.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+        });
+
+        hide.addEventListener('click', () => {
+            section.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
     const modal = document.getElementById('img-modal');
     const modalImg = document.getElementById('img-modal-img');
 

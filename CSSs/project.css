@@ -90,11 +90,70 @@
 }
 
 .card-screenshots {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.screenshots-toggle,
+.screenshots-hide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    letter-spacing: 0.5px;
+}
+
+.screenshots-toggle:hover,
+.screenshots-hide:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.screenshots-toggle::after {
+    content: '▾';
+    font-size: 0.85rem;
+    transition: transform 0.3s ease;
+}
+
+.card-screenshots.is-open .screenshots-toggle {
+    display: none;
+}
+
+.screenshots-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s ease;
+}
+
+.card-screenshots.is-open .screenshots-panel {
+    grid-template-rows: 1fr;
+}
+
+.screenshots-panel-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.screenshots-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin: 20px 0;
+    padding-top: 12px;
     width: 100%;
+}
+
+.screenshots-hide {
+    margin-top: 12px;
 }
 
 .screenshot-wrap {
